@@ -1,7 +1,5 @@
 from turtle import Turtle
 
-
-
 class Ball(Turtle):
     def __init__(self):
         super().__init__()
@@ -19,3 +17,5 @@ class Ball(Turtle):
     def come_back_y(self):
         self.y_steps *= -1
 
+    def come_back_x(self):
+        self.x_steps *= -1

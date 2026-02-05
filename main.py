@@ -30,5 +30,8 @@ while game_on:
     if ball.ycor() > 305 or ball.ycor() < -305:
         ball.come_back_y()
 
+    if ball.distance(player_1) < 50 and ball.xcor() < -420\
+            or ball.distance(player_2) < 50 and ball.xcor() > 420:
+        ball.come_back_x()
 
 screen.exitonclick()
