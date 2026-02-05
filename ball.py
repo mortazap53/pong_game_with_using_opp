@@ -6,6 +6,7 @@ class Ball(Turtle):
         self.shape("square")
         self.color("white")
         self.penup()
+        self.speed(2)
         self.ball_speed = 0.1
         self.y_steps = 10
         self.x_steps = 10

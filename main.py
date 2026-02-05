@@ -32,11 +32,16 @@ while game_on:
     if ball.ycor() > 305 or ball.ycor() < -305:
         ball.come_back_y()
 
-    if ball.distance(player_1) < 50 and ball.xcor() < -420\
-            or ball.distance(player_2) < 50 and ball.xcor() > 420:
+    if (ball.distance(player_1) < 50 and ball.xcor() < -420
+            or ball.distance(player_2) < 50 and ball.xcor() > 420):
         ball.come_back_x()
 
-    if ball.xcor() > 450 or ball.xcor() < -450:
+    if ball.xcor() < -450:
         ball.create_new_ball()
+        score.adding_score_1()
+
+    if ball.xcor() > 450:
+        ball.create_new_ball()
+        score.adding_score_2()
 
 screen.exitonclick()
