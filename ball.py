@@ -22,4 +22,5 @@ class Ball(Turtle):
         self.x_steps *= -1
 
     def create_new_ball(self):
+        self.ball_speed = 0.1 * (2 * 0.9)
         self.goto(0, 0)
