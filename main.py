@@ -34,4 +34,7 @@ while game_on:
             or ball.distance(player_2) < 50 and ball.xcor() > 420:
         ball.come_back_x()
 
+    if ball.xcor() > 450 or ball.xcor() < -450:
+        ball.create_new_ball()
+
 screen.exitonclick()

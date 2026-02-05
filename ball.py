@@ -19,3 +19,6 @@ class Ball(Turtle):
 
     def come_back_x(self):
         self.x_steps *= -1
+
+    def create_new_ball(self):
+        self.goto(0, 0)
