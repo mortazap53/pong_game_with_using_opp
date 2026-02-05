@@ -13,3 +13,6 @@ class Field(Turtle):
             self.forward(20)
             self.pendown()
             self.forward(20)
+        self.penup()
+        self.goto(0, 0)
+        self.dot(70, "white")
