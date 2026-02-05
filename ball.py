@@ -1,7 +1,6 @@
 from turtle import Turtle
 
-y_steps = 10
-x_steps = 10
+
 
 class Ball(Turtle):
     def __init__(self):
@@ -10,7 +9,13 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.ball_speed = 0.1
+        self.y_steps = 10
+        self.x_steps = 10
 
     def move(self):
-        self.setx(self.xcor() + x_steps)
-        self.sety( self.ycor() + y_steps )
+        self.setx(self.xcor() + self.x_steps)
+        self.sety(self.ycor() + self.y_steps)
+
+    def come_back_y(self):
+        self.y_steps *= -1
+

@@ -27,5 +27,8 @@ while game_on:
     ball.move()
     screen.update()
 
+    if ball.ycor() > 305 or ball.ycor() < -305:
+        ball.come_back_y()
+
 
 screen.exitonclick()
