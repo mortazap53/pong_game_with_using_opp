@@ -2,6 +2,7 @@ from turtle import Screen
 from field import Field
 from paddles import Paddle
 from ball import Ball
+from score import Score
 import time
 
 screen = Screen()
@@ -13,6 +14,7 @@ field_1 = Field()
 player_1 = Paddle((-450, 0))
 player_2 = Paddle((450, 0))
 ball = Ball()
+score = Score()
 
 
 screen.listen()
