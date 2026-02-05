@@ -7,7 +7,7 @@ class Field(Turtle):
         self.color("white")
         self.penup()
         self.goto(0, 325)
-        while self.xcor() > -325:
+        while self.ycor() > -325:
             self.setheading(270)
             self.penup()
             self.forward(20)
